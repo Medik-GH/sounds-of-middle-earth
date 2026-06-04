@@ -41,7 +41,7 @@
     "react-ga": "^3.3.1",
     "react-leaflet": "^4.0.0",
     "react-lite-youtube-embed": "2.0.14-1",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.30.4"
   },
   "devDependencies": {
     "@honkhonk/vite-plugin-svgr": "^1.1.0",
