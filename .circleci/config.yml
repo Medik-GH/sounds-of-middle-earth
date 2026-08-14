@@ -68,7 +68,7 @@ jobs:
             - dist
   deploy-frontend:
     docker:
-      - image: cimg/go:1.18.8
+      - image: cimg/go:1.23
     working_directory: ~/sounds-of-middle-earth/frontend
     steps:
     - checkout:
