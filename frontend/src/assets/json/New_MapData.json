@@ -419,6 +419,54 @@
       "name": "Bilbo's Study",
       "url": "HoAsuHnmdUg",
       "location": [4096, 2305]
+    },
+    {
+      "name": "Eastfarthing Woods",
+      "url": "68-rToI63FM",
+      "location": [
+        4102,
+        2438
+      ]
+    },
+    {
+      "name": "Caras Galadhon",
+      "url": "6h4HA92SyrU",
+      "location": [
+        3365,
+        4011
+      ]
+    },
+    {
+      "name": "Ered Mithrin",
+      "url": "pw4H6OtxUIM",
+      "location": [
+        4833,
+        4647
+      ]
+    },
+    {
+      "name": "Lonely Mountain",
+      "url": "mOXsM99SB8w",
+      "location": [
+        4645,
+        4939
+      ]
+    },
+    {
+      "name": "Ruins of Númenor",
+      "url": "ByYJtTDIB2Q",
+      "location": [
+        672,
+        2476
+      ]
+    },
+    {
+      "name": "Lone-lands / Ettenmoors",
+      "url": "pke0emKF5U0",
+      "location": [
+        4485,
+        3674
+      ]
     }
   ]
 }
