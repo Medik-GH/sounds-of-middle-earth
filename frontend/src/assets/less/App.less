@@ -43,8 +43,29 @@ body {
 
 .video-popup {
   max-width: 43.5vw;
-  width: 45.5vw;
+  width: 43.5vw;
   filter: drop-shadow(2px 2px 2px #000000)
+}
+
+// Let the embed fill the panel frame instead of using its own fixed width,
+// otherwise it sits left with a gap on the right
+.video-popup .leaflet-popup-content {
+  width: 100% !important;
+}
+
+.video-popup .yt-lite {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+
+  // Feather the edges so the video blends into the panel frame
+  @edge-fade:
+    linear-gradient(to right, transparent 0%, #000 4%, #000 96%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, #000 5%, #000 95%, transparent 100%);
+  -webkit-mask-image: @edge-fade;
+  mask-image: @edge-fade;
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
 }
 
 .leaflet-popup-content {
@@ -65,12 +86,6 @@ body {
 
 .leaflet-bottom {
   display: none;
-}
-
-.lyt-activated {
-  width: 42.5vw;
-  max-width: 40.5vw;
-  min-width: 40.5vw;
 }
 
 #mapBackground {
