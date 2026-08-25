@@ -2,18 +2,10 @@
 
 import { MapLocation } from './interfaces';
 import New_MapData from '../assets/json/New_MapData.json';
-import OG_MapData from '../assets/json/OG_MapData.json';
 
-export function getMapMarkers(version: string): MapLocation[] {
-    let jsonMapData: MapLocation[] = [];
-
-    if (version === 'og') {
-        jsonMapData = JSON.parse(JSON.stringify(OG_MapData.locations));
-    } else {
-        jsonMapData = JSON.parse(JSON.stringify(New_MapData.locations));
-    }
-
-    return jsonMapData;
+export function getMapMarkers(): MapLocation[] {
+    // Cloned so that dragging a marker in edit mode can't mutate the imported JSON
+    return JSON.parse(JSON.stringify(New_MapData.locations));
 }
 
 
@@ -34,19 +26,5 @@ export function log(message: any, colour?: string) {
         default:
             console.log(message);
             break;
-    }
-}
-
-export function getXyCoords(latLngString: string): string[] {
-    try {
-        const match = latLngString.match(/\(([^)]+)\)/);
-
-        if (match) {
-            return match[1].split(',');
-        } else {
-            return [];
-        }
-    } catch (error) {
-        log(error, 'red');
     }
 }

@@ -26,6 +26,14 @@ body {
 }
 
 // Map
+// Fractional zoom lands neighbouring tiles on subpixel boundaries, which the
+// browser rounds inconsistently and leaves hairline gaps between. A pixel of
+// overlap closes them. Leaflet sizes tiles inline, hence the !important.
+.leaflet-container .leaflet-tile {
+  width: 257px !important;
+  height: 257px !important;
+}
+
 .leaflet-container {
   width: 100vw;
   height: 100vh;

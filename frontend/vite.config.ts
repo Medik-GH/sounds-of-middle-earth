@@ -9,7 +9,9 @@ export default defineConfig({
         outDir: '../dist',
         emptyOutDir: true
     },
-    publicDir: './src/assets/',
+    // Resolved against the root (src/), so this is src/public. Holds the map
+    // tile pyramid, which is copied to dist as-is and served from /tiles
+    publicDir: 'public',
     plugins: [
         react(),
         tsconfigPaths(),

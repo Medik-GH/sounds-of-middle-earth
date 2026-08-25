@@ -1,7 +1,6 @@
 export const LotrSpinner = (props: any) => {
     const mapIsLoaded = props.mapIsLoaded;
 
-    console.log(mapIsLoaded);
     if (mapIsLoaded) {
         return null;
     }

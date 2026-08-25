@@ -24,7 +24,7 @@
   "scripts": {
     "start": "vite --config vite.config.ts serve src",
     "build": "vite --config vite.config.ts build src",
-    "preview": "vite --config vite.config.ts preview",
+    "preview": "vite --config vite.config.ts preview src",
     "clean-dist": "rimraf dist/*",
     "lint": "eslint './src/**/*.{js,ts,tsx}' --quiet",
     "start-prod": "npm run build",
